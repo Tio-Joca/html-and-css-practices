@@ -6,7 +6,7 @@ This repository was created to maintain and share my studies and pratices about 
 
 Feel free to explore the contents you can find here.
 
-If you want to contact me, you can use of these options below:
+If you want to contact me, you can use one of these options below:
 
 E-mail: mailto:joaquim.pessoa@tutamail.com
 
