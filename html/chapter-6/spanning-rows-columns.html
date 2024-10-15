@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta lang="en-US" charset="utf-8" />
+    <title>Spanning rows and columns of a table</title>
+  </head>
+  <body>
+    <h1 id="top">Spanning rows and columns of a table</h1>
+    <p>
+      Previously in this chapter, I started to talk about tables in HTML. Now,
+      we'll dive deeper into this topic, especially about the ability to span
+      rows and columns in table elements provided by HTML. In HTML, we can use
+      this ability to make a table cell stretch to take a position that was
+      previously destinated to another table cell. To become this possible, we
+      need to use rowspan and colspan attributes to make this happen, rowspan
+      when you need to stretch table cells in horizontal axis and colspan when
+      you need to stretch table cells in vertical axis.
+    </p>
+    <table>
+      <h2>Academic schedule</h2>
+      <tr>
+        <th></th>
+        <th scope="col">Monday</th>
+        <th scope="col">Tuesday</th>
+        <th scope="col">Wednesday</th>
+        <th scope="col">Thursday</th>
+        <th scope="col">Friday</th>
+      </tr>
+      <tr>
+        <th scope="row">3 pm to 6 pm</th>
+        <td colspan="5">Monitoring</td>
+      </tr>
+      <tr>
+        <th scope="row">6:45 pm to 8:15 pm</th>
+        <td rowspan="2">Class</td>
+        <td rowspan="2">Monitoring</td>
+        <td rowspan="2">Class</td>
+        <td>Class</td>
+        <td rowspan="2">Monitoring</td>
+      </tr>
+      <tr>
+        <th scope="row">8:30 pm to 10:00 pm</th>
+        <td>Monitoring</td>
+      </tr>
+    </table>
+    <hr />
+    <a href="#top">Return to the top of the page</a>
+    <hr />
+    <a href="./index.html#top">Return to chapter's 6 homepage</a>
+  </body>
+</html>

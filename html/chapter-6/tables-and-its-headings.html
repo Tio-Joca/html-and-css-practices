@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta lang="en-US" charset="utf-8" />
+    <title>Tables and its headings</title>
+  </head>
+  <body>
+    <h1 id="top">Tables and its headings</h1>
+    <p>
+      In this web page, I'll present to you the usage of tables in HTML. Tables
+      are used to store a set of data that contains a relation with each other
+      demonstrated by rows and columns (i.e. arrays, financial indicators,
+      transaction historic, statistics, etc). Each block inside a table are
+      called table cell. Table cells can be one of two elements, table data or
+      table heading. Table data elements are used to store each piece of data
+      that sit inside a table. To indicate the respective meaning to each table
+      data elements within the table, we can use table heading elements to
+      indicate its respective meaning by row and column. To make a table in
+      HTML, we need to use a table element with some table rows elements. Inside
+      of each table row element, we can have a set of table heading and table
+      data. In HTML, tables are written row by row. Also, we can use a scope
+      attribute to indicate if a specific table heading was used for which axis,
+      row or column.
+    </p>
+    <table>
+      <h2>Array 4 by 4</h2>
+      <tr>
+        <th></th>
+        <th scope="col">Column 0</th>
+        <th scope="col">Column 1</th>
+        <th scope="col">Column 2</th>
+        <th scope="col">Column 3</th>
+      </tr>
+      <tr>
+        <th scope="row">Row 0</th>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <th scope="row">Row 1</th>
+        <td>1</td>
+        <td>0</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <th scope="row">Row 2</th>
+        <td>2</td>
+        <td>3</td>
+        <td>0</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row">Row 3</th>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <hr />
+    <a href="#top">Return to the top of the page</a>
+    <hr />
+    <a href="./index.html#top">Return to chapter's 5 homepage</a>
+  </body>
+</html>

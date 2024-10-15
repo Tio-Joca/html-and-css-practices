@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta lang="en-US" charset="utf-8" />
+    <title>Images and its positions</title>
+  </head>
+  <body>
+    <h1 id="top">Images and its positions</h1>
+    <p>
+      Here, I will demonstraste the usage of images and its interaction with
+      paragraphs. Firstly, we need to discuss about block and inline elements.
+    </p>
+    <p>
+      Block elements are HTML elements that always appear on a next line (e.g.
+      paragraphs, ordered lists, list item). Inline elements are HTML elements
+      that sit within block level elements and doesn't appear on a next line
+      (e.g. images, links, line breaks).
+    </p>
+    <p>
+      If you want to see more examples about block and inline elements, you'll
+      find
+      <a href="https://www.w3schools.com/html/html_blocks.asp" target="_blank">
+        here</a
+      >.
+    </p>
+    <h2>
+      But, which correlation exists between paragraphs and images elements?
+    </h2>
+    <p>
+      Image elements that sit outside paragraphs can be displayed before or
+      after paragraphs, based on image element position in relation about a
+      paragraph element. If an image element is located before a paragraph
+      element, the respective paragraphs will be displayed on a new line. If an
+      image element is located after a paragraph element, the respective image
+      will be displayed on a new line.
+    </p>
+    <p>
+      Image elements that sit within paragraphs change which way its respective
+      images content and paragraphs content are displayed, based where its image
+      elements are located, in the beginning, in the middle or in the end of
+      paragraphs element content.
+    </p>
+    <p>
+      After this explanation, I will show to you some examples demonstrating the
+      concepts explained above.
+    </p>
+    <h2>Examples</h2>
+    <h3>Outside and before a paragraph element</h3>
+    <img
+      src="../../images/chapter-5/debian.png"
+      width="101"
+      height="124"
+      alt="Debian logo"
+      title="Debian logo"
+    />
+    <p>
+      Debian is a linux distribution. It was created initially by Ian Murdock in
+      August 16<sup>th</sup>, 1993. The name comes from the names of the creator
+      of Debian, Ian Murdock, and his wife, Debra. This distro is used to create
+      many other popular linux distros like Ubuntu, Linux Mint Debian Edition,
+      Kali Linux and Tails. It's not recommended for daily usage by beginners,
+      but if you want to learn more about linux and operating systems it's an
+      excelent choice.
+    </p>
+    <h3>Inside a paragraph element, before its text content</h3>
+    <p>
+      <img
+        src="../../images/chapter-5/debian.png"
+        width="101"
+        height="124"
+        alt="Debian logo"
+        title="Debian logo"
+      />
+      Debian is a linux distribution. It was created initially by Ian Murdock in
+      August 16<sup>th</sup>, 1993. The name comes from the names of the creator
+      of Debian, Ian Murdock, and his wife, Debra. This distro is used to create
+      many other popular linux distros like Ubuntu, Linux Mint Debian Edition,
+      Kali Linux and Tails. It's not recommended for daily usage by beginners,
+      but if you want to learn more about linux and operating systems it's an
+      excelent choice.
+    </p>
+    <h3>Inside a paragraph element, in the middle of its text content</h3>
+    <p>
+      Debian is a linux distribution. It was created initially by Ian Murdock in
+      August 16<sup>th</sup>, 1993. The name comes from the names of the creator
+      of Debian, Ian Murdock, and his wife, Debra. This distro is used to create
+      many other popular linux distros like Ubuntu, Linux Mint Debian Edition,
+      Kali Linux and Tails.
+      <img
+        src="../../images/chapter-5/debian.png"
+        width="101"
+        height="124"
+        alt="Debian logo"
+        title="Debian logo"
+      />
+      It's not recommended for daily usage by beginners, but if you want to
+      learn more about linux and operating systems it's an excelent choice.
+    </p>
+    <h3>Inside an paragraph element, after its text content</h3>
+    <p>
+      Debian is a linux distribution. It was created initially by Ian Murdock in
+      August 16<sup>th</sup>, 1993. The name comes from the names of the creator
+      of Debian, Ian Murdock, and his wife, Debra. This distro is used to create
+      many other popular linux distros like Ubuntu, Linux Mint Debian Edition,
+      Kali Linux and Tails. It's not recommended for daily usage by beginners,
+      but if you want to learn more about linux and operating systems it's an
+      excelent choice.
+      <img
+        src="../../images/chapter-5/debian.png"
+        width="101"
+        height="124"
+        alt="Debian logo"
+        title="Debian logo"
+      />
+    </p>
+    <h3>Outside and after a paragraph element</h3>
+    <p>
+      Debian is a linux distribution. It was created initially by Ian Murdock in
+      August 16<sup>th</sup>, 1993. The name comes from the names of the creator
+      of Debian, Ian Murdock, and his wife, Debra. This distro is used to create
+      many other popular linux distros like Ubuntu, Linux Mint Debian Edition,
+      Kali Linux and Tails. It's not recommended for daily usage by beginners,
+      but if you want to learn more about linux and operating systems it's an
+      excelent choice.
+    </p>
+    <img
+      src="../../images/chapter-5/debian.png"
+      width="101"
+      height="124"
+      alt="Debian logo"
+      title="Debian logo"
+    />
+    <hr />
+    <a href="#top">Return to the top of the page</a>
+    <hr />
+    <a href="./index.html#top">Return to chapter's 5 homepage</a>
+  </body>
+</html>
