@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <title>Drop down list and multiple select box</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1 id="top">Drop down list and multiple select box</h1>
+    <p>
+      Continuing this practice project, in this page I'll demonstrated the usage
+      of drop down lists and multiple select boxes. To implement drop down
+      lists, we need to use select element and option elements. Select elements
+      are used to make drop down list and multiple select box, this element
+      needs a name attribute to indicate the name that will be used to create
+      the name/value pairs. In addition, we can use a multiple attribute to
+      create multiple select boxes. Also, if we want, a size attribute can be
+      used with drop down list boxes and multiple select boxes. This attribute
+      can adjust the size of multiple select boxes. But, when we use this
+      attribute without a multiple attribute, we can create a select box that
+      allow users to select only one option in the related set of options.
+    </p>
+    <hr />
+    <form action="http://www.example.com.br/process.js" method="get">
+      <p>From this list of cities, what would you like to visit someday?</p>
+      <select name="cities">
+        <option value="hamburg">Hamburg</option>
+        <option value="sydney">Sydney</option>
+        <option value="ny">New York</option>
+        <option value="berlin">Berlin</option>
+        <option value="london">London</option>
+        <option value="dublin" selected="selected">Dublin</option>
+      </select>
+    </form>
+    <hr />
+    <form action="http://www.example.com.br/process.js" method="get">
+      <p>What musical instruments do you like?</p>
+      <select name="instruments" size="4">
+        <option value="bass">Bass</option>
+        <option value="guitar">Guitar</option>
+        <option value="piano">Piano</option>
+        <option value="sax">Saxophone</option>
+        <option value="trumpet">Trumpet</option>
+        <option value="drum">Drum</option>
+      </select>
+    </form>
+    <hr />
+    <form action="http://www.example.com.br/process.js" method="get">
+      <p>From this list of books, what would you like to read someday?</p>
+      <p>
+        If you disire, you can select multiple options from this box holding one
+        of the control keys in your keyboard and then click with your mice in
+        each option you want.
+      </p>
+      <select name="books" multiple="multiple" size="4">
+        <option value="gabtsby" selected="selected">The Great Gatsby</option>
+        <option value="animal">Animal Farm</option>
+        <option value="arms">A Farewell to arms</option>
+        <option value="dalloway">Mrs Dalloway</option>
+        <option value="crime" selected="selected">Crime and Punishment</option>
+        <option value="pride">Pride and Prejudice</option>
+      </select>
+    </form>
+    <hr />
+    <a href="#top">Return to the top of the page</a>
+    <hr />
+    <a href="./index.html">Return to chapter's 7 homepage</a>
+  </body>
+</html>

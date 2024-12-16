@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Labels and fieldsets</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1 id="top">Labels and fieldsets</h1>
+    <p></p>
+    <hr />
+    <form action="http://www.example.com.br/process.js" method="get">
+      <p>Inform your name, gender and your job</p>
+      <label>Name: <input type="text" name="name" maxlength="100" /></label>
+      <p>
+        Gender:
+        <input id="female" type="radio" name="gender" value="f" />
+        <label for="female">Female</label>
+        <input id="male" type="radio" name="gender" value="m" />
+        <label for="male">Male</label>
+      </p>
+      <p>
+        What's your actual job?
+        <br />
+        <br />
+        <label for="job">Job: </label>
+        <br />
+        <input id="job" type="text" name="job" />
+      </p>
+    </form>
+    <hr />
+    <form>
+      <fieldset>
+        <legend>Vehicle details</legend>
+        <label>
+          Vehicle's plate:
+          <br />
+          <input type="text" name="plate" />
+        </label>
+        <br />
+        <label for="color">Vehicle's color</label>
+        <br />
+        <input id="color" type="text" name="color" />
+        <br />
+        <label>Vehicle's documentation</label>
+        <br />
+        <input id="ok" type="radio" name="docs" value="ok" />
+        <label for="ok">In order</label>
+        <input id="trouble" type="radio" name="docs" value="trouble" />
+        <label for="trouble">With documentation pendencies</label>
+      </fieldset>
+    </form>
+    <hr />
+    <a href="#top">Return to the top of the page</a>
+    <hr />
+    <a href="./index.html">Return to chapter's 7 homepage</a>
+  </body>
+</html>
