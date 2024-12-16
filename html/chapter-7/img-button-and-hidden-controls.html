@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <title>Image buttons, buttons and hidden controls</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1 id="top">Image buttons, buttons and hidden controls</h1>
+    <p>
+      Welcome to another web page practice. Continuing our travel through forms
+      in HTML, now I'll talk about image buttons, buttons and hidden controls.
+      Image buttons are similar to submit buttons, the difference resides in the
+      fact that image buttons use images to make an area entirely clickable to
+      serve as a button. Buttons are HTML elements that can be used to make
+      customizable buttons with images, text and other contents desired by the
+      web author. Hidden form controls are used to maintain certain kinds of
+      data the users doesn't need know about it, but these data is useful for
+      some purpose in the web page or for a web server.
+    </p>
+    <hr />
+    <form action="http://www.example.com.br/process.js" method="get">
+      <p>Subscribe your e-mail here to receive our latest updates</p>
+      <p>E-mail:</p>
+      <input type="text" name="email" />
+      <input
+        type="image"
+        name="subscribe"
+        value="subscribe"
+        alt="Subscribe"
+        src="../../images/chapter-7/subscribe.jpg"
+        width="100"
+        height="20"
+      />
+    </form>
+    <hr />
+    <form action="http://www.example.com.br/process.js" method="get">
+      <button type="submit" name="add" value="1">
+        <img
+          src="../../images/chapter-7/add.gif"
+          alt="add"
+          width="10"
+          height="10"
+        />
+        Add
+      </button>
+      <input type="hidden" name="bookmark" value="lyrics" />
+    </form>
+    <hr />
+    <a href="#top">Return to the top of the page</a>
+    <hr />
+    <a href="./index.html">Return to chapter's 7 homepage</a>
+  </body>
+</html>

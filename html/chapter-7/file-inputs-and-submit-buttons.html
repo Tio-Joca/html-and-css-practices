@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <title>File inputs and submit buttons</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1 id="top">File inputs and submit buttons</h1>
+    <p>
+      In this web page, I'll demonstrate how to create a file input to provide a
+      tool to upload a file in a web page and how to create a submit button to
+      send information collected by users to a web server. When we want to
+      create file inputs, we need to use an input element with a type attribute
+      with file as its value. For submit buttons, we need to use an input
+      element with a type attribute with submit as its value and we can use a
+      value attribute to contain a text that will appear inside the submit
+      button.
+    </p>
+    <hr />
+    <form action="http://www.example.com.br/process.js" method="post">
+      <p>
+        What <abbr title="Portable Document Format">PDF</abbr> file would you
+        like to upload?
+      </p>
+      <input type="file" name="pdf" />
+      <br />
+      <br />
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+    <hr />
+    <form action="http://www.example.com.br/process.js" method="get">
+      <p>Submit your e-mail here receive our newsletters</p>
+      <input type="text" name="email" maxlength="30" />
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+    <hr />
+    <a href="#top">Return to the top of the page</a>
+    <hr />
+    <a href="./index.html">Return to chapter's 7 homepage</a>
+  </body>
+</html>

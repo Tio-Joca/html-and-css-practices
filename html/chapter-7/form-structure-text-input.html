@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <title>Form structure and single line text inputs</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1 id="top">Form structure and single line text inputs</h1>
+    <p>
+      Welcome to another web page in this pratice project. Now, I'll start to
+      present for you the usage of forms in HTML. Forms are used to obtain
+      certain kinds of data from users. Forms are used by users to make things
+      like insurance policy.
+    </p>
+    <h2>The process of usage of forms</h2>
+    <p>
+      The process starts when a user gives informations to fill in a form. The
+      form will contain the each information organized by name/value pairs.
+      After this, the user submits these informations in the web page in your
+      browser. Next, these informations are sent to a web server that will
+      receive this information. Right after, the informations will be processed
+      with a programming language like JavaScript, Java, PHP, Python or C#. The
+      web server could retain these informations in a database. Last but not
+      least, a web page is sent from web server to user's browser to return a
+      status about the process. It's a input, process, output cycle, just like
+      that occurrs in a CPU.
+    </p>
+    <h2>Form structure and its attributes</h2>
+    <p>
+      To make a form in HTML, we need to use a form element to contain each
+      information given by users. A form element requires an action and method
+      attribute. An action attribute is used to maintain the URL to a web page
+      in a web server that will responsible to continue the process with
+      informations received. Also, a method attribute is used to determine how
+      information will be sent to web server. Usually, it can have a value of
+      get or post. A get value means the informations will be sent in the end of
+      the URL in the action attribute. By other side, a post value means the
+      informations will be sent using HTTP headers. A get value is recommended
+      when short forms are used or when forms are used to retrieve information
+      from web server. A post value is recommended when users will be able to
+      upload files, send sensitive data, add or delete data operations in a
+      database and when longer forms are used.
+    </p>
+    <h2>Single line text inputs and its attributes</h2>
+    <p>
+      To make a single line text input, we need to use an input element with a
+      type attribute with value text. Following the principles of name/value
+      pairs to send information to a web server, we need to use a name attribute
+      to specify a name to text entered by to be used as name/value pair.
+    </p>
+    <hr />
+    <form action="http://www.example.com.br/process.js" method="get">
+      <p>This is where form controls will be placed.</p>
+    </form>
+    <hr />
+    <form action="http://www.example.com.br/process.js" method="get">
+      <p>
+        Username:
+        <input type="text" name="username" maxlength="30" />
+      </p>
+    </form>
+    <hr />
+    <a href="#top">Return to the top of the page</a>
+    <hr />
+    <a href="./index.html">Return to chapter's 7 homepage</a>
+  </body>
+</html>
