@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en-US">
   <head>
     <title>Labels and fieldsets</title>
     <meta charset="utf-8" />
   </head>
   <body>
     <h1 id="top">Labels and fieldsets</h1>
-    <p></p>
+    <p>
+      Welcome back to another web page practice in this project. Now, I'll show
+      to you how we can use labels and fieldsets in HTML. Labels are used in
+      HTML to give a simple name for each form control that can be used as a
+      clickable area. This element helps users making their interactions with
+      the form controls more intuitive and could also be useful by vision
+      impaired users. Fieldsets are used in HTML to separate form controls in
+      sections. It should have a legend element to contain a caption that
+      describes what this fieldset is related to.
+    </p>
     <hr />
     <form action="http://www.example.com.br/process.js" method="get">
       <p>Inform your name, gender and your job</p>
@@ -20,34 +29,36 @@
         <label for="male">Male</label>
       </p>
       <p>
-        What's your actual job?
-        <br />
-        <br />
         <label for="job">Job: </label>
-        <br />
         <input id="job" type="text" name="job" />
       </p>
     </form>
     <hr />
-    <form>
+    <form action="http://www.example.com.br/process.js" method="get">
       <fieldset>
         <legend>Vehicle details</legend>
-        <label>
-          Vehicle's plate:
+        <p>
+          <label>
+            Vehicle's plate:
+            <br />
+            <input type="text" name="plate" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Vehicle's color
+            <br />
+            <input type="text" name="color" />
+          </label>
+        </p>
+        <p>
+          Vehicle's documentation
           <br />
-          <input type="text" name="plate" />
-        </label>
-        <br />
-        <label for="color">Vehicle's color</label>
-        <br />
-        <input id="color" type="text" name="color" />
-        <br />
-        <label>Vehicle's documentation</label>
-        <br />
-        <input id="ok" type="radio" name="docs" value="ok" />
-        <label for="ok">In order</label>
-        <input id="trouble" type="radio" name="docs" value="trouble" />
-        <label for="trouble">With documentation pendencies</label>
+          <input id="ok" type="radio" name="docs" value="ok" />
+          <label for="ok">In order</label>
+          <input id="trouble" type="radio" name="docs" value="trouble" />
+          <label for="trouble">With documentation pendencies</label>
+        </p>
       </fieldset>
     </form>
     <hr />

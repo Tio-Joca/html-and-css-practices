@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <title>Form validation and date inputs</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1 id="top">Form validation and date inputs</h1>
+    <p>
+      In this web page, I'll show to you how to prevent submition of empty form
+      controls to a web server and the usage of date inputs with HTML5 date form
+      control.
+    </p>
+    <p>
+      Previously in this chapter, I started to demonstrate the usage of forms in
+      HTML and how to create form controls to collect data from users. But, what
+      happen when users don't provide appropriated data to be sent to the web
+      server? The web will be in trouble to handle this exception. To prevent
+      this problem, some web page authors and programmers implement form
+      validation to each form control in browser's side of application. It can
+      be implemented using some scripts in JavaScript, but web page authors can
+      use form validation provided by HTML5. This resource can be used to verify
+      if exists empty form controls before the submition or it can be used to
+      verify if each data entered in each form control follow the patters
+      expected for each data.
+    </p>
+    <p>
+      In relation about date inputs, HTML5 provides date input form controls
+      using an input element with a type attribute with date as its value.
+    </p>
+    <hr />
+    <form action="http://www.example.com.br/process.js" method="get">
+      <fieldset>
+        <legend>Create a new medical exam</legend>
+        <p>
+          <label>
+            Pacient's name:
+            <input type="text" name="usermane" required="required" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Date for medical exam:
+            <input type="date" name="date" required="required" />
+          </label>
+        </p>
+        <p>
+          <input type="submit" name="create" value="Create a new exam" />
+        </p>
+      </fieldset>
+    </form>
+    <hr />
+    <a href="#top">Return to the top of the page</a>
+    <hr />
+    <a href="./index.html">Return to chapter's 7 homepage</a>
+  </body>
+</html>
